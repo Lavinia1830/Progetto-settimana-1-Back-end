@@ -1,0 +1,17 @@
+{
+    "name": "lavinia/progetto-settimana-1-back-end",
+    "autoload": {
+        "psr-4": {
+            "Lavinia\\ProgettoSettimana1BackEnd\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lavinia1830",
+            "email": "lavinia.baratti@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
