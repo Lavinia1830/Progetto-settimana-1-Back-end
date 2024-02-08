@@ -7,6 +7,7 @@
 
     $contacts = getAllLibro($mysqli);
     
+    
 ?>
 
 <div class="container my-3">
@@ -30,17 +31,18 @@
                 foreach ($contacts as $key => $contact) { 
                 ?>
                     <tr>
-                        <th scope="row"><?= $key+1 ?></th>
-                        <td><img src=<?= $contact['image'] ?> width="50" ></td>
-                        <td><?= $contact['titolo'] ?></td>
-                        <td><?= $contact['autore'] ?></td>
-                        <td><?= $contact['anno_pubblicazione'] ?></td>
-                        <td><?= $contact['genere'] ?></td>
-                        <td>
-                            <a class="btn btn-danger" href="controller.php?action=delete&id=<?= $contact['id'] ?>" role="button">X</a>
-                            <a class="btn btn-warning" href="update.php?id=<?= $contact['id'] ?>" role="button">M</a>
-                        </td>
-                    </tr>
+                            <th scope="row"><?= $key+1 ?></th>
+                            <!-- Assicurati che il percorso dell'immagine sia racchiuso tra virgolette -->
+                            <td><img src="<?= $contact['image'] ?>" width="50" ></td>
+                            <td><?= $contact['titolo'] ?></td>
+                            <td><?= $contact['autore'] ?></td>
+                            <td><?= $contact['anno_pubblicazione'] ?></td>
+                            <td><?= $contact['genere'] ?></td>
+                            <td>
+                                <a class="btn btn-danger" href="controller.php?action=delete&id=<?= $contact['id'] ?>" role="button">X</a>
+                                <a class="btn btn-warning" href="update.php?id=<?= $contact['id'] ?>" role="button">M</a>
+                            </td>
+                        </tr>
                 <?php } }?>
             </tbody>
         </table>

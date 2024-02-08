@@ -27,7 +27,7 @@
         image VARCHAR(100) NULL,
         titolo VARCHAR(255) NOT NULL, 
         autore VARCHAR(255) NOT NULL, 
-        anno_pubblicazione INT, 
+        anno_pubblicazione INT NOT NULL, 
         genere VARCHAR(255) NOT NULL
         
     )';

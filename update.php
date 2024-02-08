@@ -40,8 +40,8 @@
                 <input type="text" value="<?= $libro['genere'] ?>" class="form-control" id="genere" placeholder="Genere..." name="genere">
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Image</label>
-                <input type="file" value="<?= $libro['image'] ?>" class="form-control" id="image" placeholder="Image..." name="image">
+                <label for="image" class="form-label">Image URL</label>
+                <input type="file" value="<?= $libro['image'] ?>" class="form-control" id="image" placeholder="Enter the URL of the image" name="image">
             </div>
             <button type="submit" class="btn btn-dark">Update</button>
         </form>

@@ -2,7 +2,7 @@
     include_once("header.php");
     include_once("navbar.php");
 
-
+    
 ?>
 
 <div class="container my-3">
